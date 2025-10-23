@@ -1,0 +1,15 @@
+[package]
+name = "circt-sv-basic"
+description = "A demo of generating MLIR CIRCT SV Dialect operations in Rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+melior = { version="0.25.0", features = ["circt-sv-dialect"] }
+mlir-sys = { version="0.5.0", features = ["circt-sv-dialect"] }
+circt-sv-attrs = { path="../circt-sv-attrs" }
+regex = "1.12"
+
+[patch.crates-io]
+melior = { git = "https://github.com/jgreenbaum/melior", branch = "circt-dialect-features-llvm20" }
+mlir-sys = { git = "https://github.com/jgreenbaum/mlir-sys", branch = "circt-dialect-features-llvm20" }
