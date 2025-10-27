@@ -187,7 +187,7 @@ port my Rust `mlir-capi-gen` capability into MLIR's C++ `mlir-tblgen` utility. T
 straightforward since both use the same TableGen data bases as in input, and the Rust and C++ calls
 have the same names and arguments (via `tblgen-rs` excellent C API).
 
-For my interest in EDA code in Rust, I expect to build on my work with the `sv` protocol and write
+For my interest in EDA code in Rust, I expect to build on my work with the `sv` dialect and write
 some generators of interest. Not only does Rust have the memory safety that C++ does not, leading to
 higher quality code, but I also want to leverage Rust's `procmacro` capability to make writing
 generators easier by mixing procedural and declarative code while maintaining excellent error
